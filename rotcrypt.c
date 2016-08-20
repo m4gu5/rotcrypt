@@ -10,25 +10,19 @@
 bool is_uppercase_letter(int index) {
 	return
         (index >= LOWER_BOUND_UPPERCASE &&
-         index <= UPPER_BOUND_UPPERCASE)
-        ? true
-        : false;
+         index <= UPPER_BOUND_UPPERCASE);
 }
 
 bool is_lowercase_letter(int index) {
     return
         (index >= LOWER_BOUND_LOWERCASE &&
-         index <= UPPER_BOUND_LOWERCASE)
-        ? true
-        : false;
+         index <= UPPER_BOUND_LOWERCASE);
 }
 
 bool is_ascii_letter(int index) {
     return 
         (is_uppercase_letter(index) ||
-         is_lowercase_letter(index))
-            ? true
-            : false;
+         is_lowercase_letter(index));
 }
 
 char get_rot_char(char c, int shift) {
